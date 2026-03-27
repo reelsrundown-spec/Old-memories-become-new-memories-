@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Online Pro - Official Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            background-color: #0a0a0a; 
+            color: #ffffff; 
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .main-card {
+            background: #151515;
+            max-width: 450px;
+            width: 100%;
+            border-radius: 30px;
+            padding: 40px 30px;
+            text-align: center;
+            border: 1px solid #333;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Top Glow Decor */
+        .main-card::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 100px;
+            height: 100px;
+            background: #ffce00;
+            filter: blur(80px);
+            opacity: 0.3;
+        }
+
+        .game-logo {
+            font-size: 5rem;
+            font-weight: 900;
+            color: #ffce00;
+            margin-bottom: 10px;
+            text-shadow: 0 0 15px rgba(255, 206, 0, 0.5);
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .tagline {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+        }
+
+        .feature-list {
+            text-align: left;
+            background: #202020;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            color: #ddd;
+        }
+
+        .feature-item i {
+            color: #ffce00;
+            margin-right: 12px;
+            font-size: 1.1rem;
+        }
+
+        .price-container {
+            margin: 30px 0;
+            padding: 15px;
+            background: rgba(39, 174, 96, 0.1);
+            border: 1px dashed #27ae60;
+            border-radius: 12px;
+        }
+
+        .price-text {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #27ae60;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #666;
+            font-size: 1rem;
+            margin-right: 10px;
+        }
+
+        /* The Payment Button */
+        .pay-btn {
+            display: block;
+            background: linear-gradient(135deg, #ffce00 0%, #ff9900 100%);
+            color: #000;
+            padding: 18px 25px;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 1.3rem;
+            font-weight: 800;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(255, 206, 0, 0.2);
+            border: none;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .pay-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(255, 206, 0, 0.4);
+        }
+
+        .pay-btn:active {
+            transform: translateY(1px);
+        }
+
+        .secure-info {
+            margin-top: 25px;
+            font-size: 0.75rem;
+            color: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .secure-info i {
+            color: #27ae60;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="main-card">
+        <div class="game-logo">B</div>
+        <h1>BINGO ONLINE PRO</h1>
+        <p class="tagline">The Ultimate Multiplayer Experience</p>
+
+        <div class="feature-list">
+            <div class="feature-item">
+                <i class="fas fa-users"></i>
+                <span>Real-time Multiplayer with Rooms</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-robot"></i>
+                <span>Advanced AI Computer Mode</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-volume-up"></i>
+                <span>Professional Sound Effects</span>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>Ad-Free Smooth Gameplay</span>
+            </div>
+        </div>
+
+        <div class="price-container">
+            <span class="old-price">₹49</span>
+            <span class="price-text">₹2 ONLY</span>
+        </div>
+
+        <a href="YOUR_PAYMENT_LINK_HERE" class="pay-btn">
+            PAY & DOWNLOAD <i class="fas fa-arrow-right"></i>
+        </a>
+
+        <div class="secure-info">
+            <span><i class="fas fa-lock"></i> Secure Payment</span>
+            <span><i class="fas fa-check-circle"></i> Instant Access</span>
+        </div>
+    </div>
+
+</body>
+</html>
+
