@@ -52,32 +52,52 @@
         }
         .feature i { color: #ffce00; margin-right: 12px; }
 
-        .price-box {
+        /* QR Code Container */
+        .qr-container {
             margin: 25px 0;
-            padding: 15px;
-            border: 1px dashed #27ae60;
-            border-radius: 12px;
-            background: rgba(39, 174, 96, 0.05);
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 20px;
+            background: #000;
         }
-        .current-price { font-size: 2.2rem; font-weight: bold; color: #27ae60; }
-        .old-price { text-decoration: line-through; color: #555; margin-right: 10px; }
+        .qr-image {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .upi-id {
+            color: #888;
+            font-size: 0.8rem;
+            font-family: monospace;
+            background: #1a1a1a;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
 
-        .pay-button {
+        .price-box {
+            margin-bottom: 25px;
+        }
+        .current-price { font-size: 1.5rem; font-weight: bold; color: #27ae60; }
+
+        /* Success Button */
+        .get-btn {
             display: block;
-            background: linear-gradient(135deg, #ffce00, #ff9900);
-            color: #000;
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: #fff;
             padding: 18px;
             text-decoration: none;
             border-radius: 15px;
             font-size: 1.2rem;
             font-weight: 800;
             transition: 0.3s;
-            box-shadow: 0 10px 20px rgba(255, 206, 0, 0.2);
+            box-shadow: 0 8px 15px rgba(39, 174, 96, 0.2);
             border: none;
             width: 100%;
             cursor: pointer;
         }
-        .pay-button:hover { transform: translateY(-3px); }
+        .get-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 20px rgba(39, 174, 96, 0.4); }
 
         .secure-tag {
             margin-top: 25px;
@@ -103,16 +123,22 @@
             <div class="feature"><i class="fas fa-check"></i> Professional Sound Effects</div>
         </div>
 
-        <div class="price-box">
-            <span class="old-price">₹99</span>
-            <span class="current-price">₹2 ONLY</span>
+        <p style="color: #ffce00; font-weight: bold;">Scan & Pay ₹2</p>
+
+        <div class="qr-container">
+            <img src="qr.png" alt="Payment QR Code" class="qr-image">
+            <p class="upi-id">vishnurdj680-2@okicici</p>
         </div>
 
-        <a href="YOUR_PAYMENT_LINK_HERE" class="pay-button">PAY & UNLOCK NOW</a>
+        <div class="price-box">
+            <span class="current-price">Price: ₹2 Only</span>
+        </div>
+
+        <a href="success.html" class="get-btn">I PAID - GET GAME NOW</a>
 
         <div class="secure-tag">
-            <span><i class="fas fa-lock"></i> SECURE UPI</span>
-            <span><i class="fas fa-bolt"></i> INSTANT ACCESS</span>
+            <span><i class="fas fa-shield-alt"></i> AD-FREE</span>
+            <span><i class="fas fa-clock"></i> LIFETIME</span>
         </div>
     </div>
 
